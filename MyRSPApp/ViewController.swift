@@ -102,5 +102,13 @@ class ViewController: UIViewController {
     
     @IBAction func resetButtonTab(_ sender: Any) {
         //초기상태 + 컴퓨터가 다시 랜덤 가위/바위/보를 선택하고 저장
+        //1) 첫번째 두번째 이미지뷰에 준비 이미지 띄워야 함
+        comImageView.image = #imageLiteral(resourceName: "ready")
+        myImageView.image = UIImage(named: "ready.png")
+        //2) 첫번째 두번째 레이블에 준비라고 문자열 띄워야 함
+        comChoiceLabel.text = "준비"
+        myChoiceLabel.text = "준비"
+        mainLabel.text="선택해주세요"
+        comChoice = Rps(rawValue: Int.random(in: 0...2))!
     }
 }
