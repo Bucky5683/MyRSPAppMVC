@@ -17,6 +17,7 @@
 		EB5E8EBD2A717469002C98E1 /* MyRSPAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E8EBC2A717469002C98E1 /* MyRSPAppUITests.swift */; };
 		EB5E8EBF2A717469002C98E1 /* MyRSPAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E8EBE2A717469002C98E1 /* MyRSPAppUITestsLaunchTests.swift */; };
 		EB5E8ECC2A717BDA002C98E1 /* Rps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E8ECB2A717BDA002C98E1 /* Rps.swift */; };
+		EB71D5022A9F5DB000F3A5ED /* RpsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB71D5012A9F5DB000F3A5ED /* RpsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EB5E8EBC2A717469002C98E1 /* MyRSPAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRSPAppUITests.swift; sourceTree = "<group>"; };
 		EB5E8EBE2A717469002C98E1 /* MyRSPAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRSPAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB5E8ECB2A717BDA002C98E1 /* Rps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rps.swift; sourceTree = "<group>"; };
+		EB71D5012A9F5DB000F3A5ED /* RpsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,9 @@
 			children = (
 				EB5E8E9B2A717465002C98E1 /* AppDelegate.swift */,
 				EB5E8E9D2A717465002C98E1 /* SceneDelegate.swift */,
-				EB5E8E9F2A717465002C98E1 /* ViewController.swift */,
-				EB5E8ECB2A717BDA002C98E1 /* Rps.swift */,
-				EB5E8EA12A717465002C98E1 /* Main.storyboard */,
+				EB71D5002A9F5D4100F3A5ED /* Controllers */,
+				EB71D4FF2A9F5D3000F3A5ED /* Views */,
+				EB71D4FE2A9F5D2600F3A5ED /* Models */,
 				EB5E8EA42A717468002C98E1 /* Assets.xcassets */,
 				EB5E8EA62A717468002C98E1 /* LaunchScreen.storyboard */,
 				EB5E8EA92A717468002C98E1 /* Info.plist */,
@@ -128,6 +130,31 @@
 				EB5E8EBE2A717469002C98E1 /* MyRSPAppUITestsLaunchTests.swift */,
 			);
 			path = MyRSPAppUITests;
+			sourceTree = "<group>";
+		};
+		EB71D4FE2A9F5D2600F3A5ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB5E8ECB2A717BDA002C98E1 /* Rps.swift */,
+				EB71D5012A9F5DB000F3A5ED /* RpsManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB71D4FF2A9F5D3000F3A5ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB5E8EA12A717465002C98E1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB71D5002A9F5D4100F3A5ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB5E8E9F2A717465002C98E1 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 				EB5E8ECC2A717BDA002C98E1 /* Rps.swift in Sources */,
 				EB5E8E9C2A717465002C98E1 /* AppDelegate.swift in Sources */,
 				EB5E8E9E2A717465002C98E1 /* SceneDelegate.swift in Sources */,
+				EB71D5022A9F5DB000F3A5ED /* RpsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
